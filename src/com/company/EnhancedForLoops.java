@@ -3,19 +3,19 @@ public class EnhancedForLoops {
     public static String printStandardFor(String[] arr){
         String str = "";
         for (int a = 0; a < arr.length; a++){
-        str = arr[a] + " ";}
+        str += arr[a] + " ";}
         return str;
     }
     public static String printStandardFor(int[] arr){
         String str = "";
         for (int a = 0; a < arr.length; a++){
-            str = arr[a] + " ";}
+            str += arr[a] + " ";}
             return str;
         }
     public static String printStandardFor(double[] arr) {
         String str = "";
         for (int a = 0; a < arr.length; a++){
-            str = arr[a] + " ";}
+            str += arr[a] + " ";}
         return str;
     }
     public static String printEnhancedFor(String[] arr){
