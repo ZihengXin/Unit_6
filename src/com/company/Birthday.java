@@ -6,12 +6,12 @@ public class Birthday {
     public static void main(String[] args){
         double True = 0.0;
         for(int a = 0; a < 1000; a++){
-            Boolean situation = hasDupes(dates(23));
-            if(situation == true){
+            boolean situation = hasDupes(dates(23));
+            if(situation){
                 True++;
             }
         }
-        System.out.print("The percent of times there were duplicate birthdays is " + True/10.0);
+        System.out.print("The percent of times there were duplicate birthdays is " + True/10.0 +"%.");
     }
     public static int[] dates(int num){
         int[] BDay = new int[num];
@@ -23,7 +23,7 @@ public class Birthday {
     public static boolean hasDupes(int[] birthdays){
         boolean str = false;
         for(int a = 0; a < birthdays.length; a++){
-            for(int i =a+1; i<birthdays.length; i++){
+            for(int i = a + 1; i < birthdays.length; i++){
                 if(birthdays[a] == birthdays[i]) {
                     str = true;
                 }
